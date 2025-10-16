@@ -92,6 +92,7 @@ public_users.get('/author/:author',function (req, res) {
 });
 */
 
+// async version
 public_users.get('/author/:author', async function (req, res) {
   const author = req.params.author;
 
@@ -128,6 +129,7 @@ public_users.get('/title/:title',function (req, res) {
 });
 */
 
+// async version
 public_users.get('/title/:title', async function (req, res) {
   const title = req.params.title;
 
@@ -148,7 +150,6 @@ public_users.get('/title/:title', async function (req, res) {
     res.status(500).json({ message: `Error fetching title ${title}` });
   }
 });
-
 
 
 //  Get book review

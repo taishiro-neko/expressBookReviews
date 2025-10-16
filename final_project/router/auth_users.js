@@ -74,7 +74,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
 
   const username = req.user.username;
   const currentDate = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
-
+  // I decided to also add date because it's important for reviews
 
   // Check if the book exists
   if (!books[isbn]) {
